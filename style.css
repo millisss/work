@@ -1,0 +1,303 @@
+body {
+    background: #E5E5E5;
+    font-family: 'Roboto Slab';
+    text-align: center;
+}
+
+header {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 88px;
+    left: 0px;
+    top: 0px;
+    background: #333333;
+}
+
+p {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+ul.topnav {
+    position: absolute;
+    list-style: none;
+    margin-bottom: 50px;
+    right: 100px;
+    padding-top: 0;
+    margin-top: -75px;
+}
+
+.mnu_mob {
+    color: white;
+    font-size: 24px;
+    margin-top: -75px;
+    margin-left: 85%;
+    position: absolute;
+    list-style: none;
+    display: none;
+    cursor: pointer;
+}
+
+.mnu_mob:hover {
+    text-decoration: underline;
+}
+
+ul.topnav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+ul.topnav li a:hover {
+    text-decoration: underline;
+}
+
+ul.topnav li {
+    float: left;
+    margin-right: 50px;
+}
+
+.conteiner {
+    margin: 200px auto;
+    width: 600px;
+    height: 500px;
+}
+
+.ellipse {
+    margin-left: 37%;
+    border-radius: 50%;
+    width: 200px;
+    height: 190px;
+    box-shadow: 0 0 15px 3px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.p1 {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.p2 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.portfolio-content {
+    display: flex;
+    max-width: 1000px;
+    margin: 100 auto;
+}
+
+.conteiner1 {
+    margin: 200px auto;
+    width: 500px;
+    height: 50px;
+}
+
+.collage-container {
+    margin-top: 200px;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collage-label {
+    max-width: 510px;
+    display: flex;
+}
+
+.collage-img-1 {
+    margin: 15 15 auto;
+    width: auto;
+}
+
+.collage-img-2 {
+    margin: 15 15 auto;
+    width: auto;
+}
+
+.collage-img-3 {
+    margin: 15 15 auto;
+    width: auto;
+}
+
+.collage-item {
+    margin: 0 0.3em;
+    transition: 0.2s;
+}
+
+.collage-item-long {
+    margin: 0 0.3em;
+}
+
+.cont {
+    display: flex;
+    max-width: 900px;
+    margin: 100 auto;
+}
+
+.conteiner2 {
+    margin: 200 auto;
+    max-width: 400px;
+    height: 50px;
+    text-align: left;
+}
+
+.phone {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+}
+
+.social {
+    text-align: left;
+    font-family: Roboto Slab;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    display: flex;
+}
+
+.slash {
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+}
+
+.cover {
+    margin: 200 auto;
+    max-width: 400px;
+}
+
+input[type="text"] {
+    width: 430px;
+    height: 40px;
+    margin: 15px;
+    font-size: 18px;
+}
+
+input,
+textarea {
+    margin-top: 15px;
+    margin-left: 15px;
+    background: #E5E5E5;
+    width: 430px;
+    height: 100px;
+    font-size: 18px;
+    border: 2px solid #333333;
+}
+
+.form-textarea {
+    font-family: Roboto Slab;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 15px;
+    border: 2px solid #333333;
+    resize: vertical;
+    width: 430px;
+}
+
+input[type="submit"] {
+    margin: 10 235 auto;
+    width: 160px;
+    height: 40px;
+    background: #333333;
+    font-family: Roboto Slab;
+    font-weight: 200;
+    font-size: 18px;
+    color: white;
+}
+
+input[type="submit"]:active {
+    top: 1px;
+}
+
+@media screen and (max-width:1020px) {
+    ul.topnav li {
+        display: none;
+    }
+    .mnu_mob {
+        flood-opacity: 0%;
+        display: inline-block;
+    }
+    .portfolio-content {
+        margin: 10 auto;
+        flex-direction: column;
+    }
+    .collage-container {
+        margin: 170 auto
+    }
+    .collage-label {
+        flex-direction: column;
+    }
+    .collage-img {
+        width: 100%;
+        height: 300px;
+    }
+    .cont {
+        margin: 10 auto;
+        flex-direction: column;
+    }
+    input[type="submit"] {
+        margin: 10 -35 auto;
+        width: 430px;
+        height: 40px;
+    }
+    .collage-item-long {
+        width: 90%;
+    }
+    .social {
+        text-align: center;
+        flex-direction: column;
+    }
+    .slash {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    ul.topnav.responsive li.mnu_mob {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+header {
+    text-align: center;
+    }
+    }
+div  {
+margin-top: 0px;
+}
+img {
+    width: 200px;
+    height:350px; 
+    border-radius: 5px;  
+}
+ul {
+    text-align: left;
+    }
